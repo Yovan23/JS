@@ -1,0 +1,42 @@
+-> this give the current context  --- not use in function use in object
+
+-> in vs code Global EC this give {} (empty object )
+   but in browser give the window in which function of onClick , onSubmit etc...
+
+-> javascript execution context (EC)
+    1. Global EC -> {} in this keyword 
+    2. Function EC
+    3. Eval EC
+
+    Memory Creation Phase
+    Execution Phase
+
+step of Execution
+
+1. Global EC
+2. Memory Phase -> num1 - undefined, addnum - defination (function)
+3. Execution Phase -> num1 - 5 , addnum - [new variable environment + Execution thread] -> delete
+                       (every time make this)                |
+                                                             V
+                                 Memory Phase and Execution Phase for that function (return value to Global EC)
+-> js is single thread 
+
+-> call steck - for the function FIFO
+
+-> falsy value
+false, 0, -0, BigInt 0n, "", null, undefined, NaN
+
+-> truthy value 
+"0", 'false', " ", [], {}, function(){}
+
+->  new --> 1. empty object create 
+            2. Constructor function call
+            3. injection of value 
+
+-> js is Prototype behavier 
+
+    Array  ------> Object ------> Null
+    Function ----> Object ------> Null
+    String ------> Object ------> Null
+
+Every thing is the object in js. It is use for the Prototype  
