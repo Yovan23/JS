@@ -42,4 +42,5 @@ String.prototype.trueLength = function(){
 //     console.log(`True lengt is : ${this.trim().length}`);
 // }
 // -> here you add prototype in String but if you add in Object then you excess in string , function and arrey also.
+
 myName.trueLength();

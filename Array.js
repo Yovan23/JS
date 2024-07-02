@@ -180,5 +180,3 @@ console.log(flatArray);  // [1, 2, 3, 4, 5, 6]
 
 let flatMappedArray = fruits.flatMap(fruit => [fruit, fruit.length]);
 console.log(flatMappedArray);  // ['apple', 5, 'blackberry', 10, 'cherry', 6]
-
-
